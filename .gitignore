@@ -4,8 +4,8 @@ _site
 .tweet-cache
 tmp
 node_modules
-assets
-_includes/css
+# assets
+# _includes/css
 
 # For Travis.
 .bundle
