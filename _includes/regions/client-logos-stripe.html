@@ -1,0 +1,15 @@
+<div class="region--client-logos-stripe region--full-width {{ include.class }}">
+  <div class="region--client-logos-stripe__wrapper region--full-width__wrapper">
+    <div class="region--client-logos-stripe__text">
+      <p class="paragraph--loud">We have helped some of America’s most respected brands:</p>
+    </div>
+    <div class="region--client-logos__logos">
+      {% assign logos = site.data.logos | sort: 'weight' %}
+      {% for logo in logos | limit:5 %}
+      <div class="region--client-logos__logo">
+        <img alt="{{ logo.name }}" src="{{ base.url }}/assets/img/customers/{{ logo.image }}" class="image--grayscale">
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+---
+layout: default
+title: Open Source
+permalink: "/results/open-source/"
+class: open-source
+excerpt: 9ci's open source contributions
+---
+
+{% include regions/hero--open-source.html %}
+
+<div class="region--drupal-contributions region">
+  <h2 class="heading--underline--orange">Giving Back to the Open Source Community</h2>
+  <p>We contribute heavily to the Java, Groovy, Spring and Grails ecosystem. Here are a some examples of projects we maintain</p>
+  {% include regions/text-block-list.html items=site.data.yakworks-featured %}
+  <div class="delimited-list">
+    <p>We also contribute to open source projects in the ecosystem.</p>
+    {% assign modules = site.data.os-projects | sort: 'number_commits' | reverse %}
+    {% for module in modules %}
+    <a href="{{ module.link }}" class="delimited-list__item">{{ module.name }} ({{ module.number_commits }})</a>
+    {% endfor %}
+  </div>
+</div>
+
+{% include regions/banner-meetup.html class="bg-orange" %}
+
+{% include regions/cta-success.html %}

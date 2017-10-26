@@ -1,0 +1,22 @@
+- name: Advanced Auto Parts
+  image: Advance_Auto_Parts_Logo.png
+  weight: 1
+- name: Kolcraft
+  image: kolcraft-70th-footer-logo.png
+  weight: 2
+- name: Delta
+  image: delta2.png
+  weight: 3
+- name: Maidenform
+  image: Maidenform_Corporate_Logo.png
+  weight: 4
+- name: Revlon
+  image: revlon_red.png
+  weight: 5
+- name: Revlon
+  image: revlon_red.png
+  weight: 6
+- name: Revlon
+  image: revlon_red.png
+  weight: 7
+

@@ -1,0 +1,19 @@
+# For now, if you add a tag you also need to add an empty
+# template in /blog/tag.
+
+- slug: event
+  name: Event
+- slug: productivity
+  name: Productivity
+- slug: best-practices
+  name: Best Practices
+- slug: design
+  name: Design
+- slug: payment-processing
+  name: Payment Processing
+- slug: performance
+  name: Performance
+- slug: user-experience
+  name: User Experience
+- slug: legacy-systems-integration
+  name: Legacy Systems Integration

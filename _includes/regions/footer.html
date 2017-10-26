@@ -1,0 +1,42 @@
+<footer class="region--footer" role="contentinfo">
+  <div class="region--footer__main">
+    <div class="region--footer__main__menu">
+      {% assign org = site.data.org %}
+      <a href="/" class="region--footer__logo">
+        <img src="{{ site.url }}/assets/img/logo-light.svg" alt="9ci" class="site-logo site-logo--light">
+      </a>
+      {% include components/navigation--footer.html %}
+
+    </div>
+    <div class="region--footer__main__contact">
+      <h3 class="region--footer__main__contact__title h5">Connect with us</h3>
+      <a href="mailto:{{ org.email }}">{{ org.email }}</a>
+      <p>{{ org.phone }}</p>
+      <address>
+        {{ org.name }}<br>
+        {{ org.street }}<br>
+        {{ org.city }}, {{ org.state }} {{ org.zip }}
+      </address>
+    </div>
+    <div class="region--footer__main__social">
+      <div class="region--footer__main__social__icons">
+        <ul>
+          <li><a href="https://github.com/9ci"><i class="fa fa-github fa-lg fa-2x"></i><span class="sr-only">9ci GitHub</span></a></li>
+          <li><a href="https://twitter.com/9ci"><i class="fa fa-twitter fa-lg fa-2x"></i><span class="sr-only">9ci Twitter</span></a></li>
+          <li><a href="https://www.linkedin.com/company/9ci"><i class="fa fa-linkedin fa-lg fa-2x"></i><span class="sr-only">9ci LinkedIn</span></a></li>
+        </ul>
+      </div>
+      <!--div class="region--footer__main__social__twitter">
+        <a class="twitter-timeline"  href="https://twitter.com/Savas_Labs" data-widget-id="720223236315815936">Tweets by @Savas_Labs</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </div-->
+    </div>
+  </div>
+  <div class="region--footer__bottom">
+    <div class="region--footer__bottom__wrapper">
+      <p class="region--footer__bottom__copyright">
+        Copyright &copy; {{ org.name }} {{ 'now' | date: "%Y" }}
+      </p>
+    </div>
+  </div>
+</footer>

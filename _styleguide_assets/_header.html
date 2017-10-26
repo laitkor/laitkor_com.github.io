@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="cache-control" content="public">
+    <meta http-equiv="expires" content="86400">
+    <title>Savas Labs Front End Style Guide</title>
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,400italic,700italic|Roboto+Slab:300,400|Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="styleguide.css">
+    <link rel="stylesheet" href="../assets/styles/main.css">
+
+    <meta name="description" content="A style guide and component library for Savas Labs">
+  </head>
+  <body class="sg-body <%= 'sg-home' if title.length == 0 %>">
+    <header class="region--header sg-header" role="banner">
+      <div class="region--header__wrapper">
+
+        <a href="/" class="region--header__logo">
+          <img class="savas-logo savas-logo--main" src="images/logo.svg" alt="Savas Labs">
+        </a>
+
+        <!-- Mobile menu button. -->
+        <a href="/" id="js-mobile-menu" class="header-navigation__mobile-menu-link">MENU</a>
+
+        <!-- Main menu. -->
+        <nav role="navigation" class="header-navigation">
+          <ul id="js-navigation-menu" class="header-navigation__menu show">
+            <li class="header-navigation__menu-link <%= 'header-navigation__active-nav-item' if title.length == 0 %>"><a href="index.html">Intro</a></li>
+            <li class="header-navigation__menu-link <%= 'header-navigation__active-nav-item' if title == 'colors' %>"><a href="colors.html">Colors</a></li>
+            <li class="header-navigation__menu-link <%= 'header-navigation__active-nav-item' if title == 'Typography' %>"><a href="typography.html">Typography</a></li>
+            <li class="header-navigation__menu-link <%= 'header-navigation__active-nav-item' if title == 'Components' %>"><a href="components.html">Components</a></li>
+            <li class="header-navigation__menu-link <%= 'header-navigation__active-nav-item' if title == 'Regions' %>"><a href="regions.html">Regions</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="sg-content">
+      <div class="sg-outer-container">
+        <div class="sg-content__title">
+          <% if title.length == 0 %>
+          <h1 class="sg-content__title__title heading--underline--orange">Savas Labs Front End Style Guide</h1>
+          <% else %>
+          <h1 class="sg-content__title__title heading--underline--orange"><%= title %></h1>
+          <% end %>
+        </div>
+        <% if @blocks.length > 0 %>
+        <div class="sg-content__toc">
+          <div class="sg-content__content__menu">
+            <ul>
+              <%# Print top-level components. %>
+              <% @blocks.each do |b| %>
+              <% if b[:parent] == nil %>
+              <li><a href="#<%= b[:name] %>"><%= b[:title] %></a></li>
+              <% end %>
+              <% end %>
+            </ul>
+          </div>
+        </div>
+        <% end %>
+        <div class="sg-content__content">
+          <div class="sg-content__content__body">
+

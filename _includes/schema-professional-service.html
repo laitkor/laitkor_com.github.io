@@ -1,0 +1,20 @@
+{% assign logo = '/assets/img/logo.png' %}
+{% assign org = site.data.org %}
+<script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "ProfessionalService",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "{{ org.city }}, {{ org.stateFull }}",
+        "postalCode": "{{ org.zip }}",
+        "streetAddress": "{{ org.street }}"
+      },
+      "description": "{{ site.description }}",
+      "email": "{{ org.email }}",
+      "name": "{{ org.name }}",
+      "telephone": "{{ org.phone }}",
+      "url": "{{ site.url }}",
+      "logo": "{{ <logo></logo> | prepend: site.url }}"
+    }
+</script>

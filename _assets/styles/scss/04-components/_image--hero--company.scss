@@ -1,0 +1,126 @@
+/**
+ * @file
+ *
+ * Hero image styles.
+ */
+
+.region--hero--company {
+  background: url('/assets/img/bg/services-hero.jpg') $secondary-color-dark top center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  position: relative;
+  width: 100%;
+
+  @include grid-media($medium-screen-up) {
+    height: calc(90vh - 84px);
+    min-height: 660px;
+  }
+
+  .region--hero--company__wrapper {
+    display: block;
+    left: 0;
+    margin: auto;
+    padding: 0;
+    right: 0;
+    width: 100%;
+
+    @include grid-media($medium-screen-up) {
+      bottom: 0;
+      padding: 0 $base-spacing;
+      position: absolute;
+    }
+
+    @include grid-media($max-width-up) {
+      padding: 0;
+    }
+
+    .region--hero--company__heading-full-width {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      padding: $base-spacing * 2;
+
+      h1,
+      a {
+        color: $primary-text-color;
+      }
+
+      h1 {
+        font-family: $heading-font;
+        text-align: center;
+        text-shadow: lighten($secondary-color-dark, .1) 1px 1px 1px;
+      }
+
+      a {
+
+        &::after {
+          @include ease;
+        }
+
+        &:hover::after,
+        &:focus::after,
+        &:active::after {
+          color: $accent-color;
+        }
+      }
+    }
+
+    .region--hero--company__two-col {
+
+      @include grid-media($medium-screen-up) {
+        align-items: center;
+        display: flex;
+      }
+
+      .region--hero--company__two-col__text,
+      .region--hero--company__two-col__image {
+        display: block;
+        position: relative;
+        width: 100%;
+
+        @include grid-media($medium-screen-up) {
+          flex-basis: 50%;
+          height: 50vh;
+          min-height: 440px;
+        }
+      }
+
+      .region--hero--company__two-col__text {
+        background: $secondary-color-dark;
+        color: $primary-text-color;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: $base-spacing * 2 $base-spacing * 1.5;
+
+        @include grid-media($extra-large-screen-up) {
+          padding: $base-spacing * 2 $base-spacing * 3;
+        }
+
+        h2 {
+          color: $primary-text-color;
+          font-size: 1.25em;
+
+          @include grid-media($medium-screen-up) {
+            font-size: 1.75em;
+          }
+        }
+
+        p {
+          @include grid-media($medium-screen-up) {
+            @include paragraph-loud;
+          }
+        }
+      }
+
+      .region--hero--company__two-col__image {
+        background: url('/assets/img/company/fancy-whiteboard.jpg') $secondary-color-dark 10% center no-repeat;
+        background-size: cover;
+      }
+
+    }
+  }
+}

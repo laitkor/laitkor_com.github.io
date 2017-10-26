@@ -1,0 +1,64 @@
+/**
+ * @file
+ *
+ * Hero image styles.
+ */
+
+.region--hero--services, .region--hero--solutions {
+  background-color: $primary-color;
+  margin: 0;
+
+  .region--hero__text {
+    color: $primary-text-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+      color: $primary-text-color;
+    }
+
+    // scss-lint:disable ImportantRule
+    a,
+    a:hover,
+    a:focus {
+      color: $primary-text-color !important;
+    }
+    // scss-lint:enable ImportantRule
+
+    p {
+      @include grid-media($medium-screen-up) {
+        @include paragraph-loud;
+      }
+    }
+  }
+
+  .region--hero__image {
+    background-image: url('/assets/img/bg/services-hero.jpg');
+    background-position: 10% center;
+  }
+}
+
+.region--hero--solutions {
+  //background-image: url('/assets/img/bg/solutions-hero.jpg');
+  //background-position: 10% center;
+  background: linear-gradient( to right,  transparentize($accent-color, 0) , transparentize($accent-color, 0.2) ),
+      url('/assets/img/bg/solutions-hero.jpg') no-repeat $accent-color;
+  background-position:top;
+  background-size:cover;
+
+  @include grid-media($large-screen-up) {
+    background: linear-gradient( to right,  transparentize($accent-color, 0) , transparentize($accent-color, 0.9) ),
+    url('/assets/img/bg/solutions-hero.jpg') no-repeat $accent-color;
+    background-size:60%;
+    background-position:top right;
+    //align-items: center;
+    //background: $primary-color;
+    //display: flex;
+  }
+
+  .region--hero__image {
+    display: none;
+  }
+
+}

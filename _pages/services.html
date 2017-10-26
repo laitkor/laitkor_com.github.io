@@ -1,0 +1,17 @@
+---
+layout: default
+title: Services
+permalink: "/services/"
+class: "services"
+excerpt: 9ci is a full-service integrtion sprecialist.
+---
+
+{% include regions/hero--services.html %}
+{% include regions/service-tiles.html %}
+{% for client in site.data.clients %}
+  {% if client.project == "mitpress-bt" %}
+    {% include regions/client-quote.html class="region--client-quote--light" client=client %}
+  {% endif %}
+{% endfor %}
+{% include regions/client-logos-stripe.html %}
+{% include regions/cta-demo.html %}

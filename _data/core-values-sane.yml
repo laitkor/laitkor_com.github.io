@@ -1,0 +1,18 @@
+# A list of our core values and their descriptions.
+
+- name: <b>S</b>imple
+  id: simple
+  description: |
+    Unnecessary complexity stinks and we strive to make things as simple as they should be, but no simpler.
+- name: <b>A</b>gile
+  id: agile
+  description: |
+    We sense change before it happens and respond quickly to that change
+- name: <b>N</b>ecessary
+  id: necessary
+  description: |
+    We make sure our focus and our current spending is necessary right now to achieve our goals. We avoid shaving Yaks and we don't buy Yaks that are already bald
+- name: <b>E</b>ntrepreneurial
+  id: entrepreneurial
+  description: |
+    An entrepreneur is spontaneously creative and finds new, innovative and smarter solutions to work better. Entrepreneurs work hard but we are always looking for ways to work smarter to accomplish our goals.

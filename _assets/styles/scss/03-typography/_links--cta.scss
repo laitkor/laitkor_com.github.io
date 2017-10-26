@@ -1,0 +1,51 @@
+/**
+ * @file
+ *
+ * Typography: CTA link styles.
+ */
+
+/*doc
+---
+title: CTA links
+name: link--cta
+category: Typography
+parent: links
+---
+```html_example_table
+<div class="styleguide-wrapper styleguide-center">
+  <a href="#" class="link--cta">Read more</a>
+<div>
+
+<div class="styleguide-wrapper styleguide-center bg-orange">
+  <a href="#" class="link--cta link--cta--inverse">Read more</a>
+</div>
+```
+*/
+
+// CTA links.
+.link--cta {
+  border: solid 1px $secondary-color;
+  padding: .5em;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+    color: $primary-text-color;
+  }
+}
+
+// Inverse CTA links.
+.link--cta--inverse {
+  border: solid 1px $primary-color;
+  color: $primary-text-color;
+
+  &:hover,
+  &:focus {
+    background-color: $primary-text-color;
+    border-color: $primary-text-color;
+    color: $primary-color;
+  }
+}
+

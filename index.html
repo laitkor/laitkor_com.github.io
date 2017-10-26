@@ -1,0 +1,195 @@
+---
+layout: default
+permalink: "/"
+class: home
+---
+<style type="text/css">
+.hidden {
+    display: none !important;
+}
+
+.home__cover .overlay {
+  background-image: -webkit-linear-gradient(#000 0%, #000 60%, #000);
+  background-image: linear-gradient(#000 0%, #000 60%, #000);
+  opacity: 0.2;
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.home__cover__heading, .home__cover__content{
+  z-index: 4;
+}
+
+.home__cover video{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+
+.home__cover .home__cover__heading {
+    font-size: 2em;
+    max-width: 800px;
+}
+
+@media only screen and (min-width: 640px){
+  .home__cover .home__cover__heading {
+      font-size: 3.5em;
+  }
+}
+
+@media only screen and (min-width: 640px){
+  .customer-logo-scroll__region {
+      padding: 2em 1em;
+  }
+}
+
+@media only screen and (min-width: 720px){
+  .home__cover__content__col-right__text {
+      padding: 2em 1em;
+  }
+}
+
+#customer-logo-scroll .item{
+  font-size: 0.65rem;
+  line-height: 4em;
+}
+
+@media only screen and (min-width: 640px){
+  #customer-logo-scroll .item{
+    font-size: 1rem;
+  }
+}
+
+#customer-logo-scroll .item img{
+  padding-left: 5em;
+  height: 3.5em;
+}
+.home__cover {
+    background: url({{ base.url }}/assets/img/videos/iceflow2.jpg) #fff 50% center no-repeat;
+    overflow: hidden;
+}
+</style>
+
+<!-- Cover image and overlaid text. -->
+<div class="home__cover">
+  <video autoplay muted loop class="fillWidth">
+      <source src="{{ base.url }}/assets/img/videos/iceflow2.mp4" type="video/mp4" />
+            Your browser does not support the video tag. I suggest you upgrade your browser.
+  </video>
+  <h1 class="home__cover__heading">
+    Your <span>cash</span> flow<br>
+    ... can flow <span>faster</span>
+  </h1>
+  <div class="overlay"></div>
+  <div class="home__cover__content">
+    <div class="home__cover__content__col-left">
+      <div class="home__cover__content__col-left__text">
+        <h2>Creating solutions to help <strong>you</strong> get paid faster. <br> Its what what we do best.</h2>
+      </div>
+    </div>
+    <div class="home__cover__content__col-right">
+      <div class="home__cover__content__col-right__text">
+          <h3>
+            <strong>{{ site.title }}'s</strong>
+            Accounts Receivable invoice-to-payment solutions are <strong>Intelligent, Automated, Fast, and Easy</strong>.
+            So you get paid faster, resolve disputes faster and keep customers happy.
+          </h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="customer-logo-scroll__region region">
+  <div id="customer-logo-scroll" class="">
+
+    <div class="item">
+      <img src="{{ base.url }}/assets/img/customers/revlon_red.png" alt=""
+          style="padding-top: 0.5em" >
+    </div>
+
+    <div class="item">
+      <img src="{{ base.url }}/assets/img/customers/sherwin2.png" alt=""
+          style="height:5em; margin-top: -0.5em;" >
+    </div>
+
+    <div class="item">
+      <img src="{{ base.url }}/assets/img/customers/Advance_Auto_Parts_Logo.png" alt=""
+          style="height:3.25em; padding-top: 0.5em">
+    </div><!-- /.item -->
+
+    <div class="item">
+      <img src="{{ base.url }}/assets/img/customers/delta.png" alt=""
+          style="height:3.8em; padding-top: 0.5em" >
+    </div><!-- /.item -->
+
+    <div class="item">
+      <img src="{{ base.url }}/assets/img/customers/Rand-McNally-Official-Logo.png" alt="">
+    </div><!-- /.item -->
+
+    <div class="item">
+      <img src="{{ base.url }}/assets/img/customers/kolcraft.png" alt="">
+    </div><!-- /.item -->
+
+    <div class="item">
+      <img src="{{ base.url }}/assets/img/customers/TTI.gif" alt=""
+      style="padding-left: 7em; padding-right: 2em">
+    </div><!-- /.item -->
+
+
+    <div class="item">
+      <img src="{{ base.url }}/assets/img/customers/mouser.png" alt="">
+    </div><!-- /.item -->
+
+    <div class="item">
+      <img src="{{ base.url }}/assets/img/customers/honeywell_logo.png" alt=""
+          style="padding-left: 2em" >
+    </div><!-- /.item -->
+
+    <div class="item">
+      <img src="{{ base.url }}/assets/img/customers/carquest-650x499.png" alt=""
+          >
+    </div>
+
+
+  </div>
+
+</div>
+
+<div class="region--cta region">
+  <div class="region--cta__wrapper">
+    <h2 class="region--cta__heading ">9ci - Solutions for your Accounts Receivable Problems</h2>
+    <div class="region--cta__text">
+      <p class="paragraph--loud--responsive">
+        Our software offers full invoice-to-payment management of accounts receivable. With intelligent automation, clear dashboards, flexible alerts and powerful analytics, we give you everything you need to control your A/R and get your invoices paid faster.
+      </p>
+      <p class="paragraph--loud--responsive ">
+        And we don’t just sell you software. No canned products here. Instead, our systems can be custom-tailored to the way your company does business. And we offer extensive consulting on how to make it all work perfectly for you.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<div class="region--client-quote region--client-quote-anon region--full-width region--client-quote--dark">
+  <div class="region--client-quote__wrapper region--full-width__wrapper">
+    <div class="region--client-quote__img" style="padding-right: 50px; width:350px;">
+      <img src="/assets/img/bg/banner-women-smiling.jpg" class="" alt="">
+    </div>
+    <div class="region--client-quote__quote">
+      <p class="region--client-quote__quote__text">9ci has saved us over $4 million by assisting in our accounts receivable re-engineering efforts. They have been crucial to the productivity of our financial software systems.
+      </p>
+    </div>
+  </div>
+</div>
+
+{% include regions/product-tiles.html %}
+{% include regions/cta-demo.html %}

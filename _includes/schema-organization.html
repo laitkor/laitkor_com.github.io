@@ -1,0 +1,31 @@
+{% assign logo = '/assets/img/logo.png' %}
+{% assign org = site.data.org %}
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "{{ org.city }}, {{ org.stateFull }}",
+      "postalCode": "{{ org.zip }}",
+      "streetAddress": "{{ org.street }}"
+    },
+    "description": "{{ site.description }}",
+    "email": "{{ org.email }}",
+    "logo": {
+      "@context": "http://schema.org",
+      "@type": "ImageObject",
+      "description": "9ci logo",
+      "height": "200px",
+      "url": "{{ logo| prepend: site.url }}",
+      "width": "206px"
+    },
+    "name": "{{ org.name }}",
+    "telephone": "{{ org.phone }}",
+    "url": "{{ site.url }}"
+    "sameAs": [
+      "http://twitter.com/9ci",
+      "https://www.linkedin.com/company/9ci"
+    ]
+  }
+</script>

@@ -1,0 +1,19 @@
+---
+layout: default
+title: Products
+permalink: "/solutions/"
+class: "solutions"
+excerpt: 9ci is the way to manage Accounts Receivable Faster. Easier. Smarter. Better.
+---
+
+{% include regions/hero--solutions.html %}
+{% include regions/product-icons.html class="icon--service--subtle" %}
+{% include regions/product-tiles.html %}
+{% for client in site.data.clients %}
+  {% if client.project == "aap" %}
+    {% include regions/client-quote.html class="region--client-quote--light" client=client %}
+  {% endif %}
+{% endfor %}
+{% include regions/client-logos-stripe.html class="margin-bottom-0" %}
+{% include regions/solutions-benefits.html %}
+{% include regions/cta-demo.html %}

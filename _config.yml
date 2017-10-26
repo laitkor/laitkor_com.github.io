@@ -1,1 +1,67 @@
-theme: jekyll-theme-slate
+# Basic Info
+title: 9ci Inc
+email: info@9ci.com
+description: >
+  9ci Receivables management and accounts receivable solutions to optimize your invoicing, collections, cash application and deductions management processes.
+# Base URL is used in the manner that is specified by this guide
+# (http://jekyllrb.com/docs/github-pages/) which is to say, it's
+# not used at all.
+baseurl: ""
+url: "https://9ci.com"
+# comment_server_url: "https://squabble.9ci.com"
+# comment_server_enabled: 1
+
+# Professional and social media links
+twitter_username: 9ci
+github_username: 9ci
+
+# Languages and syntax highlighting
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax-highlighter: rouge
+
+# Include static pages.
+include: ["_pages"]
+
+# Blog
+paginate: 9
+paginate_path: "/articles/page-:num/"
+
+# For Travis CI and gulp
+exclude: ["_pages/results.html", "vendor",
+          "_assets",
+          "Gemfile",
+          "Gemfile.lock",
+          "gulpfile.js",
+          "node_modules",
+          "package.json",
+          "hologram_config.yml"]
+
+permalink: /article/:title
+
+# Collections
+collections:
+  team:
+    output: true
+    permalink: /company/:path/
+  case-studies:
+    output: true
+    permalink: /results/case-studies/:path/
+  services:
+    output: true
+    permalink: /services/:path/
+  solutions:
+    output: true
+    permalink: /solutions/:path/
+
+# Gems
+gems:
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jekyll-paginate
+  - jekyll-seo-tag
+#  - jekyll-picture-tag
+  - jemoji
+# - jekyll-twitter-plugin

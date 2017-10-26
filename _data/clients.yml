@@ -1,0 +1,67 @@
+# For client quote regions.
+
+- project: revlon
+  name: Betina Bell
+  title: Director of Revenue - Revlon
+  image: /assets/img/customers/people/Betina.png
+  quote: |
+    We are very pleased with 9ci's solutions and our users LOVE it.
+    9ci is a great partner who really delivered the return on investment we were looking for!
+
+- project: aap
+  name: Scott Senatore
+  title: VP Customer First - Advanced Auto Parts
+  image: /assets/img/customers/people/Scott-Senatore.jpg
+  quote: |
+    9ci is a great partner with great support.  They’ll bend over backwards to accommodate your business
+    requirements and deliver the maximum ROI.
+
+- project: rand
+  name: Mike Pettyjohn
+  title: Director, Corporate Credit and Collections and Customer Service, Rand McNally
+  image: /assets/img/customers/people/Mike-Pettyjohn.jpg
+  quote: |
+    Before 9ci, we spent more time gathering information, and now we spend more time analyzing it.
+    I know you hear that over and over again with all the ERP marketing, but it’s absolutely true in our
+    case. Today I can take a look at my deductions and reason codes, and instead of just sticking my
+    finger in the hole where we’re bleeding, I can ask ‘Why do we have this many deductions?’ and
+    go after the root cause of the problem.
+
+- project: honeywell
+  name: Dale Davis
+  title: Manager of Systems Integrations - Honeywell
+  image: /assets/img/customers/people/headshot.jpg
+  quote: |
+    I’m not aware of anyone else that has solved an integration problem like this in this manner.
+    During the implementation, 9ci exhibited a thorough understanding of both the systems and our
+    business problem. The bottom line is that any tool that facilitates faster,
+    more accurate cash application enhances the collection process as a whole.
+    **And that’s good for business**.
+
+- project: kolcraft-patty
+  name: Patricia Duffee
+  title: Director of Credit - Kolcraft
+  image: /assets/img/work/clients/headshot.jpg
+  quote: |
+    One of the reasons that we went with 9ci is that we felt really comfortable with not only their product,
+    but 9ci as a company.
+    They were able to work with us patiently and really took the time to understand our unique business challenges
+
+- project: heyman
+  name:
+  title:
+  image: /assets/img/work/clients/headshot.jpg
+  quote: |
+    9ci has saved us over $4 million by assisting in our accounts receivable re-engineering efforts. They have been crucial to the productivity of our financial software systems.
+
+- project: interior
+  name: Don Shannon
+  title: Principal - Interior Investments, LLC
+  image: /assets/img/work/clients/headshot.jpg
+  quote: |
+    9ci's system eliminated our antiquated manual systems and offline spreadsheets and provided our
+    collection professionals and supervisors with timely, accurate and usable real time data.
+    Before 9ci, we wasted the majority of our time researching and accumulating data and now we invest
+    our time analyzing the data and acting on the information.
+    We chose 9ci because it presented a compelling economic value equation while delivering
+    the information and results that our competitive industry demands.

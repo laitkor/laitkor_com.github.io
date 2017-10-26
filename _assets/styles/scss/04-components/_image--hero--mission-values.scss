@@ -1,0 +1,28 @@
+/**
+ * @file
+ *
+ * Hero image styles.
+ */
+
+.region--hero--mission-values {
+  background-color: $secondary-color-dark;
+  background-image: url('/assets/img/bg/mission-values-hero.jpg');
+  background-position: center center;
+  background-size: cover;
+  margin: 0;
+
+  .region--hero__text {
+    color: $primary-text-color;
+
+    h1 {
+      color: $primary-text-color;
+      text-shadow: lighten($secondary-color-dark, .1) 2px 2px 2px;
+    }
+
+    p {
+      @include grid-media($medium-screen-up) {
+        @include paragraph-loud;
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+---
+layout: default
+title: Case Studies
+permalink: "/results/case-studies/"
+class: case-studies
+excerpt: Case studies from our customers like Kolcraft, Revlon, Honeywell and other great companies
+---
+
+{% include regions/case-study-blocks--limit-4.html %}
+{% for client in site.data.clients %}
+  {% if client.project == "heyman" %}
+    {% include regions/client-quote-anon.html class="region--client-quote--dark" client=client %}
+  {% endif %}
+{% endfor %}
+{% include regions/case-study-blocks--other.html %}
+{% include regions/cta-demo.html %}
+
