@@ -4,7 +4,7 @@ title: Collections Management
 slug: collections
 weight: 2
 summary: |
-  Reduce Everything – DSO, Bad Debt, Wasted Time & Manpower. Get paid faster. Reduce DSO, 30+ Day Delinquencies, Unresolved Credits & Deductions. And automated workflow means you need less time and staff.
+  Reduce everything but your incoming cash flow – DSO, dad debt, wasted time & manpower. Get paid faster. Reduce 30+ day delinquencies, Unresolved disputes & deductions. And the automated workflow means you'll need less time, less manpower and fewer headaches.
 icon: "products/collections.png"
 vertical_image: |
     linear-gradient( 0deg, #013A5E, rgba(74, 56, 50, 0) ), url('/assets/img/services/collections-side.jpg') top right / 37% #013A5E no-repeat
