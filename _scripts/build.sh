@@ -14,17 +14,17 @@ npm install
 gulp
 
 # Checkout master and remove everything
-git clone https://${GH_TOKEN}@github.com/savaslabs/savaslabs.github.io.git ../savaslabs.github.io.master
-cd ../savaslabs.github.io.master
+git clone https://${GH_TOKEN}@github.com/9ci/9ci.github.io.git ../9ci.github.io.master
+cd ../9ci.github.io.master
 git checkout master
 rm -rf *
 
 # Copy generated HTML site from source branch in original repo.
 # Now the master branch will contain only the contents of the _site directory.
-cp -R ../savaslabs.github.io/_site/* .
+cp -R ../9ci.github.io/_site/* .
 
 # Make sure we have the updated .travis.yml file so tests won't run on master.
-cp ../savaslabs.github.io/.travis.yml .
+cp ../9ci.github.io/.travis.yml .
 git config user.email ${GH_EMAIL}
 git config user.name "savas-bot"
 
