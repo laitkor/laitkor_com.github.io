@@ -1,14 +1,12 @@
 # Introduction
 
-Welcome to the [Savas Labs](https://savaslabs.com) front end style guide!
-
 ## About this style guide
 
 This style guide is built using [Hologram](http://github.com/trulia/hologram) and uses YAML and HTML in SCSS comments to construct the documentation. Configuration can be found in `hologram_config.yml` and styleguide assets such as header and footer markup are located in the `styleguide_assets` directory. The styleguide is built using the `hologram` command, which is incorporated into our gulp `build` and `serve` tasks.
 
-To see all the code for this style guide and our website, check out our [GitHub Repository](https://github.com/savaslabs/savaslabs.github.io).
+To see all the code for this style guide and our website, check out our [GitHub Repository](https://github.com/9ci/9ci.github.io).
 
-## Writing styles for savaslabs.com
+## Writing styles for 9ci.com
 
 ### Directory structure
 

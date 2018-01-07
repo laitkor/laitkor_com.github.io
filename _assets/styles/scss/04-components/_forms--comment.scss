@@ -23,7 +23,7 @@ parent: forms
       <div class="form--comment__field form--comment__field--email">
         <label for="email">Email</label>
         <input type="email" name="email" id="email" required="">
-        <p class="form--comment__helptext">Savas Labs will never sell your email address or spam you.</p>
+        <p class="form--comment__helptext">will never sell your email address or spam you.</p>
       </div>
     </div>
     <div class="form--comment__field form--comment__field--comment form--comment__row__item">
@@ -39,10 +39,10 @@ parent: forms
   <div class="form--comment__row">
     <div class="form--comment__field form--comment__field--nocaptcha form--comment__row__item">
       <div class="form--comment__field--nocaptcha__image">
-        <img src="/assets/img/icons-and-logos/owl.png" alt="Savas Labs logo">
+        <img src="/assets/img/icons-and-logos/owl.png" alt="logo">
       </div>
       <div class="form--comment__field--nocaptcha__input">
-        <label for="nocaptcha">What type of animal is the Savas Labs logo?</label>
+        <label for="nocaptcha">What type of animal is the logo?</label>
         <p class="form--comment__helptext">Hint: 3 letters long, starts with an "o" and ends with an "l".</p>
         <input type="text" name="nocaptcha" id="nocaptcha" required="">
       </div>

@@ -26,7 +26,7 @@ cp -R ../9ci.github.io/_site/* .
 # Make sure we have the updated .travis.yml file so tests won't run on master.
 cp ../9ci.github.io/.travis.yml .
 git config user.email ${GH_EMAIL}
-git config user.name "savas-bot"
+git config user.name "9cibot"
 
 # Commit and push generated content to master branch.
 git status

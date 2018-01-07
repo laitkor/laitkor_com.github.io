@@ -1,7 +1,3 @@
-Savas
-Savaslabs
-Savasian
-Savasians
 Drupal
 drupal
 Drupal's
@@ -368,7 +364,6 @@ Proselint
 imagemagick
 devs
 mdl
-savas
 wordlist
 kramdown
 Kramdown
