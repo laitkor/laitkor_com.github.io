@@ -248,12 +248,15 @@ gulp.task('clean:scripts', function(callback) {
  */
 gulp.task('build:images', function() {
     return gulp.src(paths.imageFilesGlob)
-        .pipe(cache(imagemin([
-            imagemin.gifsicle(),
-            jpegRecompress(),
-            imagemin.optipng(),
-            imagemin.svgo()
-        ])))
+        // XXX Fails on runnning with error: 
+        //Unhandled rejection Error: spawn /srv/jekyll/node_modules/gifsicle/vendor/gifsicle ENOENT
+        
+        // .pipe(cache(imagemin([
+        //     imagemin.gifsicle(),
+        //     jpegRecompress(),
+        //     imagemin.optipng(),
+        //     imagemin.svgo()
+        // ])))
         .pipe(gulp.dest(paths.jekyllImageFiles))
         .pipe(gulp.dest(paths.siteImageFiles))
         .pipe(browserSync.stream());
